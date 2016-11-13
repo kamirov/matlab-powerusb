@@ -25,4 +25,4 @@ The functions call the pwrusbcmd executable, which along with the powerUSB drive
 
 ## Attribution
 
-These functions were written as part of my duties while employed at the Space Avionics and Instrumentation Laboratory (SAIL) at Ryerson University in Canada.
+These functions were written as part of my duties while employed at the Space Avionics and Instrumentation Laboratory (SAIL) at Ryerson University in Canada. Many thanks to John Enright for purchasing the power controller.
