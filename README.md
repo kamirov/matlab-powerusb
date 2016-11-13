@@ -1,14 +1,10 @@
-# MATLAB PowerUSB Wrapper
-MATLAB wrapper for the powerUSB AC power controller driver. Exposes 3 functions:
+# MATLAB PowerUSB Wrappers
+MATLAB wrappers for the powerUSB AC power controller's driver. This is essentially a power bar whose sockets can be enabled/disabled by USB (more information on [the PowerUSB website](http://www.pwrusb.com/)). This wrapper allows you to do so through MATLAB function calls. 
 
-* `powerusb()`
-* `powerusb_on()`
-* `powerusb_off()`.
+When I made this, PowerUSB didn't publicly release a 64-bit driver, so I couldn't use their API with my 64-bit MATLAB installation. They did have an executable though, so I made a few MATLAB wrappers that call it with the appropriate arguments. 
 
+The functions call the pwrusbcmd executable, which along with the powerUSB driver (PwrUSBDll.dll) should be present in one directory. 
 
-The powerUSB AC power controller is essentially a power bar whose sockets can be enabled/disabled by USB (more information on [the PowerUSB website](http://www.pwrusb.com/)). These functions call the pwrusbcmd executable, which along with the powerUSB driver (PwrUSBDll.dll) should be present in one directory.
-
-When I made this, PowerUSB didn't publicly release a 64-bit driver, so I couldn't use their API with my 64-bit MATLAB installation. They did have an executable though, so I made a few MATLAB wrappers that call it with the appropriate arguments.
 
 ## Functions
 
