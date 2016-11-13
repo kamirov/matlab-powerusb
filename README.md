@@ -10,19 +10,19 @@ The powerUSB AC power controller is essentially a power bar whose sockets can be
 
 When I made this, PowerUSB didn't publicly release a 64-bit driver, so I couldn't use their API with my 64-bit MATLAB installation. They did have an executable though, so I made a few MATLAB wrappers that call it with the appropriate arguments.
 
-# Functions
+## Functions
 
-### `powerusb(outlet1, outlet2, outlet3)`
+#### `powerusb(outlet1, outlet2, outlet3)`
 
 * Turns on/off corresponding outlets.
 * The arguments are booleans. `true` turns the corresponding outlet on, `false` turns it off.
 
-### `powerusb_off()`
+#### `powerusb_off()`
 
 * Turns off all outlets.
 * Wrapper for `powerusb(0, 0, 0)`.
 
-### `powerusb_on()`
+#### `powerusb_on()`
 
 * Turns on all outlets
 * Wrapper for `powerusb(1, 1, 1)`.
